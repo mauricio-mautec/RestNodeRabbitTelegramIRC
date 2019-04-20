@@ -1,0 +1,22 @@
+{
+  "name": "p3-g3",
+  "version": "1.0.0",
+  "description": "Projeto 3 de Aplicações Distribuídas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MarcelloVSilva@gitlab.com/ad-si-2017-1/p3-g3.git"
+  },
+  "author": "Marcello Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ad-si-2017-1/p3-g3/issues"
+  },
+  "homepage": "https://gitlab.com/ad-si-2017-1/p3-g3#README",
+  "devDependencies": {
+    "socket.io": "^2.0.3"
+  }
+}

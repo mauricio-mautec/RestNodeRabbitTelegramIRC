@@ -1,0 +1,141 @@
+/* Semantic CSS applies Blueprint CSS positioning to your custom IDs.
+   File saved as utf-8 encoding.
+
+   number of columns:10
+   column width:70
+   gutter width:10
+   total width:790
+   row height:18 px 
+*/
+
+#container {
+    /* This is a Blueprint Container. Spans 10 columns. */
+    width:790px;
+    margin:0 auto;
+    
+    /* height is 20 rows */
+    height:360px;
+    background:url(src/grid.png);
+}
+
+
+/* Begin descendants of container */
+#identidade {
+    /* Spans 10 columns. */
+    float:left;
+    width:790px;
+    margin-right:0;
+    
+    /* height is 4 rows */
+    height:72px;
+}
+
+
+/* Begin descendants of identidade */
+#dvNick {
+    /* Spans 3 columns. */
+    float:left;
+    width:230px;
+    margin-right:10px;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+
+#btnComando {
+    /* Spans 2 columns. */
+    float:left;
+    width:150px;
+    margin-right:0;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+
+#dvMensagem {
+    /* Spans 5 columns. */
+    float:left;
+    width:390px;
+    margin-right:0;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+
+#dvInf {
+    /* Spans 5 columns. */
+    float:left;
+    width:390px;
+    margin-right:0;
+    
+    /* height is 4 rows */
+    height:72px;
+}
+
+
+/* Begin descendants of dvInf */
+#dvSala {
+    /* Spans 1 columns. */
+    float:left;
+    width:70px;
+    margin-right:0;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+
+#dvSteath {
+    /* Spans 1 columns. */
+    float:left;
+    width:70px;
+    margin-right:0;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+
+#dvClock {
+    /* Spans 2 columns. */
+    float:left;
+    width:150px;
+    margin-right:0;
+    
+    /* height is 2 rows */
+    height:36px;
+}
+/* End descendants of dvInf */
+
+/* End descendants of identidade */
+
+
+#dvUsuario {
+    /* Spans 2 columns. */
+    float:left;
+    width:150px;
+    margin-right:10px;
+    
+    /* height is 16 rows */
+    height:288px;
+}
+
+#dvCanal {
+    /* Spans 2 columns. */
+    float:left;
+    width:150px;
+    margin-right:10px;
+    
+    /* height is 16 rows */
+    height:288px;
+}
+
+#dvMural {
+    /* Spans 6 columns. */
+    float:left;
+    width:470px;
+    margin-right:0;
+    
+    /* height is 16 rows */
+    height:288px;
+}
+/* End descendants of container */
+

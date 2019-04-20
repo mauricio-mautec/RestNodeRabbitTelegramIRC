@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+APP:        ONEPAGE APLICATION PARA META-CHAT WEB/AMQP
+AUTOR:      MAURICIO JUNQUEIRA
+DISCIPLINA: ADSI-2017-1
+INICIO:     25-MAIO-2017
+VERSAO:     08-JUN-2017 v. 1.0
+NOTAS:      NECESSITA controler.js, screen.css, print.css
+            CSS UTILIZADO NA FORMATACAO:
+              24 COLUNAS DE 30px LINHAS DE 18px LARGURA TOTAL 950px
+            QUATRO AREAS PRINCIPAIS:
+              IDENTIFICAÇÃO E POSTERIOR ENVIO DE MENSAGENS
+              RESULTADO DAS CHAMADAS AO SERVIDOR
+              MURAIS IRC E TELEGRAM
+-->
+<html>
+  <head>
+    <!-- File saved as utf-8 encoding. -->
+    <meta charset="UTF-8">
+    <title>META-CHAT Web Client</title>
+
+    <!-- CSS Framework -->
+    <link   rel="stylesheet" href="screen.css" type="text/css" media="screen, projection">
+    <link   rel="stylesheet" href="print.css" type="text/css" media="print">
+
+    <!-- HABILITANDO USO DE JQUERY -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="controler.js" type="text/javascript"></script>
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+    <!-- Number of columns: 24
+         Column width: 30
+         Gutter width: 10
+         Total width: 950
+         Row height: 18 px  -->
+    <!-- To remove div outlines, remove line below. -->
+    <style>div {outline:1px solid #0000FF;}</style>
+  </head>
+  <body>
+    <form id="frmDados">
+    <input type="hidden" id="UserID" name="frmUserID" value="">
+    <input type="hidden" id="UserPW" name="frmUserPW" value="">
+    <input type="hidden" id="UserCH" name="frmUserCH" value="">
+    <div class="container showgrid">
+    
+        <!-- Nome do Aplicativo -->
+        <div class="span-24">
+            <h1>Meta-Chat Web Client</h1>
+            <h3 id="UserIDInfo">USERID / CANAL</h3>
+        </div><!--  end span-24 -->
+        
+        <div class="span-24">
+        
+            <!-- Aqui se escolhe o canal a ser utilizado: IRC ou TG -->
+            <div class="span-8">
+                <p align="center">Escolha o Canal para envio de Mensagens:</p>
+                <select name="frmCanal" class="span-8" id="Canal">
+                    <option value="IRC">IRC - Internet Relay Chat</option>
+                    <option value="TLG">Serviço de Mensagens Telegram</option>
+                </select>    
+            </div><!--  end span-8 -->
+            
+            <div class="span-1">
+            </div><!--  end span-1 -->
+            
+            <!-- Local onde se digita os valores utilizados pela aplicacao -->
+            <div class="span-11">
+                <p id="typeInfo" align="center">Informação:</p>
+                <input class="span-11" type="text" name="edtValor" id="Valor">
+            </div><!--  end span-11 -->
+            
+            <div class="span-1">
+            </div><!--  end span-1 -->
+            
+            <div class="span-3 last">
+                <p align="center">Comando</p>
+                <button class="span-3 last" type="button" id="Comando" name="btncomando" value="">BOTAO</button>
+            </div><!--  end span-3 last -->
+        </div><!--  end span-24 -->
+        
+        <!-- Informação sobre o Canal Utilizado e UserID -->
+        <div class="span-24">
+            <p id="Response">Result:</p>
+        </div><!--  end span-24 -->
+        
+        <!-- Local onde são apresentados as informações dos canais -->
+        <div class="span-24">
+            <textarea class="span-11" name="frmMuralIRC" id="MuralIRC">
+            Dados do Mural IRC
+            </textarea>
+            <p class="span-2" align="center" id="Motion">IRC / TG</p>
+            <textarea class="span-11 last" name="frmMuralTLG" id="MuralTLG">
+            Dados do Mural TG
+            </textarea>
+        </div><!--  end span-24 -->
+        
+    </div><!--  end container -->
+    </form>
+  </body>
+</html>
